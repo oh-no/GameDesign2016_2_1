@@ -145,6 +145,7 @@ ModelImporter:
     2300086: pCylinder7
     2300088: pCylinder8
     2300090: pCylinder9
+    2300092: //RootNode
     3300000: pCylinder1
     3300002: pCylinder10
     3300004: pCylinder11
@@ -191,6 +192,7 @@ ModelImporter:
     3300086: pCylinder7
     3300088: pCylinder8
     3300090: pCylinder9
+    3300092: //RootNode
     4300000: pCylinder1
     4300002: pCylinder2
     4300004: pCylinder3
@@ -237,6 +239,7 @@ ModelImporter:
     4300086: pCylinder44
     4300088: pCylinder45
     4300090: pCylinder46
+    4300092: pCylinder47
     9500000: //RootNode
   materials:
     importMaterials: 1
