@@ -12,13 +12,13 @@ public class Player_MP : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            magic.MPCurrentVal -= 10;
+            magic.MPCurrentVal -= 20;
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            magic.MPCurrentVal += 10;
+            magic.MPCurrentVal -= 30;
         }
 
 

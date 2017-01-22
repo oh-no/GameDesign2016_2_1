@@ -18,7 +18,7 @@ public class Player : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Q)) {
             health.HPCurrentVal -= 10;
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             health.HPCurrentVal += 10;
         }
