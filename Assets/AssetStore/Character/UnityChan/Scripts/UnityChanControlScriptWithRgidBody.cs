@@ -186,18 +186,18 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
 	void OnGUI()
 	{
-		GUI.Box(new Rect(Screen.width -260, 10 ,250 ,150), "Interaction");
-		GUI.Label(new Rect(Screen.width -245,30,250,30),"Up/Down Arrow : Go Forwald/Go Back");
-		GUI.Label(new Rect(Screen.width -245,50,250,30),"Left/Right Arrow : Turn Left/Turn Right");
-		GUI.Label(new Rect(Screen.width -245,70,250,30),"Hit Space key while Running : Jump");
-		GUI.Label(new Rect(Screen.width -245,90,250,30),"Hit Spase key while Stopping : Rest");
-		GUI.Label(new Rect(Screen.width -245,110,250,30),"Left Control : Front Camera");
-		GUI.Label(new Rect(Screen.width -245,130,250,30),"Alt : LookAt Camera");
-	}
+		GUI.Box(new Rect(Screen.width -260, 10 ,250 ,150), "操作説明");
+		GUI.Label(new Rect(Screen.width -245,30,250,30),"マウスを動かす：視点を動かす");
+		GUI.Label(new Rect(Screen.width -245,50,250,30),"キーボード「ｗ」：直進");
+		GUI.Label(new Rect(Screen.width -245,70,250,30),"キーボード「ｓ」 : ゆっくり後退");
+		GUI.Label(new Rect(Screen.width -245,90,250,30),"キーボード「数字」：技選択");
+		GUI.Label(new Rect(Screen.width -245,110,250,30),"マウス「左クリック」：技発動");
+        //GUI.Label(new Rect(Screen.width -245,70,250,30),"キーボード「スぺース」: ジャンプ");
+    }
 
 
-	// キャラクターのコライダーサイズのリセット関数
-	void resetCollider()
+    // キャラクターのコライダーサイズのリセット関数
+    void resetCollider()
 	{
 	// コンポーネントのHeight、Centerの初期値を戻す
 		col.height = orgColHight;

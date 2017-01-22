@@ -5,12 +5,12 @@ public class CameraControl : MonoBehaviour {
 	[SerializeField]Transform target;
 	[SerializeField]float spinSpeed = 1.0f;
 
-	private const float DISTANCE = 0.01f;	//カメラとターゲットの距離
+	private const float DISTANCE = 0.003f;	//カメラとターゲットの距離
 
 	Vector3 nowPos;
 	Vector3 pos = Vector3.zero;
 	Vector2 mouse = Vector2.zero;
-	Vector3 oldPos = Vector3.zero;
+	//Vector3 oldPos = Vector3.zero;
 	bool isCol = false;
 	float oldMouseX;
 	float oldMouseY;
@@ -25,7 +25,7 @@ public class CameraControl : MonoBehaviour {
 			Debug.Log("player didn't setting. Auto search 'Player' tag.");
 		}
 
-		mouse.y = 0.5f; // start mouse y pos ,0.5f is half
+		mouse.y = 0.4f; // start mouse y pos ,0.5f is half
 	}
 
 	// Update is called once per frame
@@ -51,7 +51,7 @@ public class CameraControl : MonoBehaviour {
 
 		pos.y += nowPos.y;
 		//pos.x += nowPos.x; // if u need a formula,pls remove comment tag.
-		oldPos = pos;
+	//	oldPos = pos;
 
 		transform.position = DISTANCE * pos + target.position;
 		transform.LookAt(target.position);
